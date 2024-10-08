@@ -1,4 +1,4 @@
-# Website da empresa LunarHost
+# Website da empresa LunarHosting
 
 ## Servidores Instantâneos
 

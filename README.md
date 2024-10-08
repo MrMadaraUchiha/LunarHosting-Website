@@ -1,6 +1,8 @@
 # Website da empresa LunarHosting
 
-![Apresentação do Projeto](./apresentacao.png)
+<p align="center">
+  <img src="./apresentacao.png" alt="Apresentação do Projeto" />
+</p>
 
 ## Servidores Instantâneos
 

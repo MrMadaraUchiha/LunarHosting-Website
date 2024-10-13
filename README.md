@@ -18,7 +18,7 @@ Este projeto é um site informativo para uma empresa que oferece servidores dedi
 - **CSS:** Estilização e layout do site.
 - **JavaScript (opcional):** Para futuras interações dinâmicas (não implementado neste projeto).
 
-## Estrutura do Projeto
+## Estrutura do Projeto feita pelo cliente no Canva:
 
 <p align="center">
   <img src="./apresentacao.png" alt="Apresentação do Projeto" />

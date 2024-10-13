@@ -3,111 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servidores Instântaneos - Lunar</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Colocar o titulo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Cabeçalho -->
     <header>
-        <nav>
-            <div class="logo">
-                <img src="images/logo.png" alt="Lunar Logo">
-            </div>
-            <ul class="menu">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Contato</a></li>
+        <nav class="navbar">
+            <img src="https://i.imgur.com/4aSOpVj.png" class="logo">
+            <ul class="nav-links">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Servidores Dedicados</a></li>
+                <li><a href="#">Rede</a></li>
+                <li><a href="#">Revendedor</a></li>
             </ul>
-        </nav>
-        <div class="hero">
-            <h1>Servidores Instântaneos</h1>
-            <p>Tenha seu servidor bare metal em minutos com a melhor infraestrutura!</p>
-            <button>Mais Informações</button>
-        </div>
+            <div class="auth-buttons">
+                <button class="btn entrar">Entrar</button>
+                <button class="btn criar-conta">Crie Sua Conta</button>
+            </div>
+        </nav>        
+        <div class="header-content2">
+            <h1>SERVIDORES<br>INSTANTÂNEOS</h1>
+            <p>Tenha seus servidores baremetal entregues
+                em até 30 minutos <br> com alta disponibilidade
+                e proteção Anti-DDoS de alta capacidade.</p>
+                <br>
+            <button class="cta-btn">Servidores Dedicados</button> 
+            <button class="cta-btn2">Servidores VPS</button>
+        </div> 
     </header>
 
-    <!-- Seção de servidores -->
-    <section class="servers">
-        <div class="server-details">
-            <h2>Servidores Bare Metal Rapid Deploy</h2>
-            <p>Servidores dedicados de última geração com alta disponibilidade e pronta entrega.</p>
+    <section id="sv" class="bare-metal">
+        <img src="https://i.imgur.com/JzngPgO.png" alt="Servidores Bare Metal" class="img2">
+        <div class="text">
+        <h2>SERVIDORES BARE METAL RAPID DEPLOY</h2>  
+        <p>Servidores dedicados de última geração com as melhores tecnologias e memória DDR5 de alta disponibilidade.</p>
         </div>
-        <div class="server-image">
-            <img src="images/servers.png" alt="Servidores">
-        </div>
+    
     </section>
 
-    <!-- Seção de Rede e Mitigação -->
-    <section class="network">
-        <h2>Rede e Mitigação de alta capacidade</h2>
-        <p>
-            Nossos servidores contam com uplinks de 10Gbps e Mitigação contra ataques DDoS de até 200Tbps.
-        </p>
-        <img src="images/mapa.png" alt="Mapa">
+    <section class="network-mitigation">
+        <div class="text">
+        <h2>Rede e Mitigação de Alta Capacidade</h2>
+        <p>Todos os servidores contam com
+            portas de rede 100% dedicadas,
+            uplinks acima de 10Gbps e Mitigação contra 
+           ataques DDoS de até 280Tbps Inline</p>
+        </div>
+        <img src="https://i.imgur.com/tFN2Y1K.png" alt="Mapa de Rede" class="img2">
     </section>
 
-    <!-- Seção Sobre Nós -->
-    <section class="about">
-        <h2>Um Pouco Sobre Nós</h2>
-        <div class="about-grid">
-            <div class="about-item">
+    <section class="about-us">
+        <h2>UM POUCO SOBRE NÓS</h2>
+        <div class="info-cards">
+            <div class="card">
+                <div class="icon-circle">
+                    <img src="https://i.imgur.com/TwXUUeS.png" alt="Hospedagem Transparente">
+                </div>
                 <h3>Hospedagem Transparente</h3>
-                <p>Trabalhamos com transparência e suporte dedicado para todos os nossos clientes.</p>
+                <p>É com satisfação que convidamos nossos clientes a conhecerem de perto como realizamos nosso trabalho, garantindo que possam sempre confiar em nos escolher como seu destino de hospedagem.</p>
             </div>
-            <div class="about-item">
-                <h3>Proteção Anti-DDoS</h3>
-                <p>Proteção avançada contra ataques, garantindo segurança e estabilidade.</p>
+            <div class="card">
+                <div class="icon-circle">
+                    <img src="https://i.imgur.com/TSY6CIz.png" alt="Proteção Anti-DDoS">
+                </div>
+                <h3>Proteção <br>Anti-DDoS</h3>
+                <p>Oferecemos a mais avançada proteção contra ataques DDoS do mercado, com uma capacidade global de 280 Tbps, garantindo que seu servidor permaneça online a cada hora, todos os dias do ano.</p>
             </div>
-            <div class="about-item">
+            <div class="card">
+                <div class="icon-circle">
+                    <img src="https://i.imgur.com/G5FcSC8.png" alt="Localização em São Paulo">
+                </div>
                 <h3>Localização em São Paulo</h3>
-                <p>Data center localizado em São Paulo para melhor performance e latência.</p>
+                <p>Temos as rotas de conexão mais eficientes com provedores, tanto nacionais quanto internacionais, graças à nossa ligação com o IX.BR e diretamente com ISPs como Vivo, Tim, Algar e outros.</p>
             </div>
-            <div class="about-item">
-                <h3>Uptime de 99.9%</h3>
-                <p>Garantimos a melhor disponibilidade possível para seu serviço.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Características -->
-    <section class="features">
-        <h2>Aqui você tem...</h2>
-        <div class="features-grid">
-            <div class="feature-item">
-                <h3>Conexão dedicada</h3>
-                <p>Conexão estável e dedicada para garantir a melhor experiência.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Segurança</h3>
-                <p>Nossa infraestrutura garante a proteção e a privacidade de todos os dados dos clientes.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Proteção Anti-DDoS</h3>
-                <p>Nossos servidores contam com proteção avançada contra ataques DDoS.</p>
+            <div class="card">
+                <div class="icon-circle">
+                    <img src="https://i.imgur.com/HuRvdPC.png" alt="Uptime de 99,9%">
+                </div>
+                <h3>Uptime de 99,9%</h3>
+                <p>Nos asseguramos um uptime de 99,9% em todos os serviços disponíveis em nosso site, com um SLA de 100% garantido em nossos termos de serviço.</p>
             </div>
         </div>
     </section>
 
-    <!-- Rodapé -->
+    <section class="timeline-section">
+        <h1>AQUI VOCÊ TEM...</h1>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h2>Segurança</h2>
+            <p>Nós asseguramos a proteção da sua privacidade com uma criptografia de ponta, garantindo que seus arquivos sejam armazenados de maneira segura.</p>
+            <p>Estamos em total conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD), Lei nº 13.709, para garantir a segurança e a confidencialidade dos seus dados.</p>
+          </div>
+      
+          <div class="timeline-item">
+            <h2>Conexão dedicada</h2>
+            <p>Oferecemos a você o menor ping do Brasil para o seu servidor, assegurando máxima velocidade e estabilidade nas suas conexões.</p>
+          </div>
+      
+          <div class="timeline-item">
+            <h2>Proteção Anti-DDoS</h2>
+            <p>Com o Cloudflare Magic Transit de 280 Tbps e proteções locais, oferecemos proteção completa contra ataques, assegurando a disponibilidade e estabilidade do seu servidor em tempo integral.</p>
+          </div>
+        </div>
+      </section>      
+    
     <footer>
-        <div class="footer-content">
+        <div class="footer-container">
             <div class="footer-logo">
-                <img src="images/logo-footer.png" alt="Logo Lunar">
-                <li><a href="#">Entre em Contato</a></li>
+                <img src="https://i.imgur.com/4aSOpVj.png" alt="Logo">
+                <p>Entre em contato conosco!</p>
             </div>
-            <div class="footer-links">
+    
+            <div class="footer-section">
+                <h3>Serviços</h3>
                 <ul>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Políticas</a></li>
+                    <li><a href="#">Servidores Baremetal</a></li>
+                    <li><a href="#">Servidores VPS</a></li>
+                    <li><a href="#">WHMCS</a></li>
+                    <li><a href="#">Servidores Minecraft</a></li>
                 </ul>
             </div>
-            <div class="footer-info">
-                <p>&copy; 2024 Lunar. Todos os direitos reservados.</p>
+    
+            <div class="footer-section">
+                <h3>Páginas</h3>
+                <ul>
+                    <li><a href="#">Painel</a></li>
+                    <li><a href="#">Financeiro</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Entre em Contato</h3>
+                <ul>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="tel:+55984451001">+55 98445-1001</a></li>
+                </ul>
             </div>
         </div>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

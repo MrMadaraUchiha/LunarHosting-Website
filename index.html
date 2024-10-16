@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colocar o titulo</title>
-    <link rel="stylesheet" href="styles1.css">
-    <link rel="stylesheet" href="styles2.css">
+    <title>Colocar o título</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <img src="https://i.imgur.com/4aSOpVj.png" class="logo">
+            <!-- Logo funcional, redirecionando para a página inicial -->
+            <a href="https://lunarhosting.com.br">
+                <img src="https://i.imgur.com/4aSOpVj.png" class="logo" alt="Logo">
+            </a>
             <ul class="nav-links">
                 <li><a href="https://lunarhosting.com.br">Sobre</a></li>
                 <li><a href="https://lunarhosting.com.br/bare-metal">Servidores Dedicados</a></li>
@@ -19,8 +23,8 @@
                 <li><a href="https://lunarhosting.com.br/revenda">Revendedor</a></li>
             </ul>
             <div class="auth-buttons">
-                <a href="https://financeiro.lunarhosting.com.br/index.php?rp=/login" class="btn entrar">Entrar</a>
-                <a href="https://financeiro.lunarhosting.com.br/register.php" class="btn criar-conta">Crie Sua Conta</a>
+                <button class="btn entrar" onclick="window.location.href='https://financeiro.lunarhosting.com.br/index.php?rp=/login'">Entrar</button>
+                <button class="btn criar-conta" onclick="window.location.href='https://financeiro.lunarhosting.com.br/register.php'">Crie Sua Conta</button>
             </div>
         </nav>        
         <div class="header-content2">
@@ -28,10 +32,22 @@
             <p>Tenha seus servidores baremetal entregues
                 em até 30 minutos <br> com alta disponibilidade
                 e proteção Anti-DDoS de alta capacidade.</p>
-                <br>
-            <button class="cta-btn">Servidores Dedicados</button> 
-            <a href="https://lunarhosting.com.br/vps" class="cta-btn2">Servidores VPS</a>
-        </div> 
+            <br>
+            <button class="cta-btn" onclick="window.location.href='https://lunarhosting.com.br/bare-metal'">Servidores Dedicados</button> 
+            <button class="cta-btn2" onclick="window.location.href='https://lunarhosting.com.br/vps'">Servidores VPS</button>
+        </div>
+    
+        <!-- Adicionando as imagens flutuantes -->
+        <div class="text-and-images">
+            <div class="speech-bubble">
+                <p>OPERE COM AS MELHORES LINHAS</p>
+            </div>
+            <div class="floating-images">
+                <img id="img1" src="https://i.imgur.com/DGByVtp.png" alt="Imagem1" class="float-img">
+                <img id="img2" src="https://i.imgur.com/qGpqnVp.png" alt="Imagem2" class="float-img">
+            </div>
+        </div>             
+        
     </header>
 
     <section id="sv" class="bare-metal">
@@ -112,7 +128,9 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="https://i.imgur.com/4aSOpVj.png" alt="Logo">
+                <a href="https://lunarhosting.com.br">
+                    <img src="https://i.imgur.com/4aSOpVj.png" alt="Logo">
+                </a>
                 <p>Entre em contato conosco!</p>
             </div>
     
@@ -121,7 +139,7 @@
                 <ul>
                     <li><a href="https://lunarhosting.com.br/bare-metal">Servidores Baremetal</a></li>
                     <li><a href="https://lunarhosting.com.br/vps">Servidores VPS</a></li>
-                    <li><a href="https://lunarhosting.com.br/server-whmcs">WHMCS</a></li>
+                    <li><a href="https://lunarhosting.com.br/whmcs">WHMCS</a></li>
                     <li><a href="https://lunarhosting.com.br/minecraft">Servidores Minecraft</a></li>
                 </ul>
             </div>
@@ -129,17 +147,19 @@
             <div class="footer-section">
                 <h3>Páginas</h3>
                 <ul>
-                    <li><a href="https://painel.lunarhosting.com.br">Painel</a></li>
-                    <li><a href="https://financeiro.lunarhosting.com.br">Financeiro</a></li>
+                    <li><a href="https://financeiro.lunarhosting.com.br/clientarea.php">Painel</a></li>
+                    <li><a href="https://financeiro.lunarhosting.com.br/clientarea.php?action=invoices">Financeiro</a></li>
                 </ul>
             </div>
     
             <div class="footer-section">
                 <h3>Entre em Contato</h3>
                 <ul>
-                    <li><a href="https://discord.gg/XKxC9VeUpZ">Discord</a></li>
+                    <li><a href="https://discord.com/invite/seulinkdiscord">Discord</a></li>
                     <li><a href="tel:+55984451001">+55 98445-1001</a></li>
                 </ul>
+           
+
             </div>
         </div>
         <p>&copy; 2024 Todos os direitos reservados.</p>

@@ -1,0 +1,49 @@
+.text-and-images {
+    position: absolute;
+    top: 200px;  /* Coloca o conjunto no topo da página */
+    right: 150px;  /* Alinha o conjunto no canto superior direito */
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centraliza o texto e as imagens */
+    gap: 10px;  /* Espaçamento entre o balão e as imagens */
+  }
+  
+  .speech-bubble {
+    position: relative;
+    background: #f0f0f0;  /* Cor de fundo do balão */
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;  /* Centraliza o texto no balão */
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    max-width: 250px;  /* Limite de largura do balão */
+  }
+  
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;  /* Posiciona a seta do balão */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #f0f0f0 transparent transparent transparent;  /* Cor da seta */
+  }
+  
+  .floating-images {
+    display: flex;
+    flex-direction: row;  /* Alinha as imagens lado a lado */
+    gap: 10px;  /* Espaçamento entre as imagens */
+  }
+  
+  .float-img {
+    width: 150px;  /* Tamanho das imagens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Efeitos de transição */
+  }
+  
+  .float-img:hover {
+    transform: scale(1.1);  /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);  /* Sombra ao passar o mouse */
+  }
+  

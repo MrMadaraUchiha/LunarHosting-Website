@@ -1,0 +1,439 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+header {
+    background: url('https://i.imgur.com/f3Zjulj.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    height: 60px;
+}
+
+.navbar a.logo {
+    font-size: 5.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+}
+
+.header-content2 {
+    text-align: left;
+    margin-right: 400px;
+    font-size: 20px;
+}
+
+.cta-btn {
+    padding: 10px 30px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #2e2e2e;
+}
+
+.cta-btn2 {
+    padding: 10px 48px;
+    background-color: #000000;
+    color: rgb(240, 240, 240);
+    border: none;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.cta-btn2:hover {
+    background-color: #2e2e2e;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.bare-metal, .network-mitigation {
+    background-color: #fff;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bare-metal h2, .network-mitigation h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.text {
+    flex: 1;
+}
+/*mudança de img e de texto do computador e do mapa*/
+.img2 {
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+}
+.bare-metal h1 {
+    font-size: 50px;
+    margin-top: 100px; /* Espaço para o título não colidir com o círculo */
+    margin-bottom: 15px;
+}
+
+.bare-metal p {
+    font-size: 20px;
+    line-height: 2.6;
+}
+
+.network-mitigation h2 {
+    font-size: 50px;
+    margin-top: 100px; /* Espaço para o título não colidir com o círculo */
+    margin-bottom: 15px;
+}
+
+.network-mitigation p {
+    font-size: 20px;
+    line-height: 2.6;
+}
+/*aqui finaliza ^^*/
+
+
+.about-us {
+    background-color: #000000; 
+    color: white;
+    padding: 10px 90;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.about-us h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 35px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 45px 45px;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    flex: 1 1 calc(50% - 20px); /* Duas colunas */
+    transition: all 0.3s ease;
+    position: relative; /* Para posicionar o círculo no topo à esquerda */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-circle {
+    background-color: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute; /* Posiciona o círculo de forma absoluta dentro do card */
+    top: 45px; /* Distância do topo do card */
+    left: 45px; /* Distância da lateral esquerda do card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-circle img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 45px;
+    margin-top: 100px; /* Espaço para o título não colidir com o círculo */
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Para dispositivos menores, os cards ocupam toda a largura */
+    }
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.features ul {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.features ul li {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-logo img {
+    width: 200px;
+    margin-bottom: 10%;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 2.0rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #aaa;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+
+/* Responsividade para navbar e cards */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-links li a:hover {
+    color: #ccc;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.auth-buttons .btn {
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-buttons .entrar {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid #ffffff;
+
+}
+
+.auth-buttons .criar-conta {
+    background-color: #fff;
+    color: black;
+    border: 2px solid #fff;
+}
+
+.auth-buttons .criar-conta:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.auth-buttons .entrar:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .header-content2 {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .cta-btn, .cta-btn2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .bare-metal, .network-mitigation {
+        flex-direction: column;
+    }
+
+    .img2 {
+        width: 10%;
+        margin: 10;
+    }
+
+    .info-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-links li {
+        margin-left: 10px;
+    }
+
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-content p {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn, .cta-btn2 {
+        padding: 8px 20px;
+    }
+}

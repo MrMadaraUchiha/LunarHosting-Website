@@ -1,0 +1,119 @@
+/* Estilo geral da seção */
+.timeline-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título */
+  .timeline-section h1 {
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  /* A linha do tempo */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Estilo dos itens */
+  .timeline-item {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Alinhamento alternado para os itens */
+  .timeline-item:nth-child(odd) {
+    align-self: flex-start;
+  }
+  
+  .timeline-item:nth-child(even) {
+    align-self: flex-end;
+  }
+  
+  /* Círculos indicativos de cada item */
+  .timeline-item:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #272525;
+    border-radius: 50%;
+    top: 20px;
+    left: -20px; /* Círculo no lado esquerdo */
+    transform: translateX(-50%);
+  }
+  
+  /* Segunda bolinha em cada item */
+  .timeline-item:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #ffb8b8; /* Cor diferente para a segunda bolinha */
+    border-radius: 50%;
+    top: 50px; /* Ajuste a altura da segunda bolinha */
+    left: -20px; /* Círculo no lado esquerdo */
+    transform: translateX(-50%);
+  }
+  
+  /* Estilo do título dentro de cada item */
+  .timeline-item h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    color: #333;
+  }
+  
+  /* Estilo dos parágrafos */
+  .timeline-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .timeline {
+      padding-left: 0;
+    }
+  
+    .timeline-item {
+      width: 100%;
+    }
+  
+    .timeline-item:before {
+      left: -15px; /* Ajustando a posição do círculo para telas menores */
+    }
+  
+    /* Ajustando a posição da segunda bolinha em telas menores */
+    .timeline-item:after {
+      top: 50px;
+    }
+  }
